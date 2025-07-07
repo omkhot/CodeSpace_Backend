@@ -18,7 +18,7 @@ async function AuthUserController(req, res){
                 secure: true, // Set to true in production with HTTPS
             });
 
-            return res.redirect("http://localhost:5173/");
+            return res.redirect("https://code-space-frontend-tau.vercel.app/");
         }
         else{
             // new user -> create one in DB and then sign in it
@@ -32,7 +32,7 @@ async function AuthUserController(req, res){
                 secure: true, // Set to true in production with HTTPS
             });
 
-            return res.redirect("http://localhost:5173/");
+            return res.redirect("https://code-space-frontend-tau.vercel.app/");
         }
 
     } catch (error) {
