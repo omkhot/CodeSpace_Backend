@@ -17,7 +17,7 @@ const app = express();
 app.use(passport.initialize());
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://code-space-frontend-tau.vercel.app",
     credentials: true,
 }));
 
