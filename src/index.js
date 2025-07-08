@@ -14,12 +14,14 @@ import ChatRouter from './Routes/ChatRouter.js';
 
 const app = express();
 
-app.use(passport.initialize());
-
 app.use(cors({
     origin: "https://code-space-frontend-tau.vercel.app",
     credentials: true,
 }));
+
+app.use(passport.initialize());
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
